@@ -3,7 +3,7 @@ import { getAuth } from "firebase/auth";
 import { getFirestore } from "firebase/firestore";
 import { getStorage } from "firebase/storage";
 const firebaseConfig = {
-  apiKey: "AIzaSyB5meGkxZyK11ThZ4ejlPp841kyF0Tw4C4",
+  apiKey: "",
   authDomain: "insta-clone-cedab.firebaseapp.com",
   projectId: "insta-clone-cedab",
   storageBucket: "insta-clone-cedab.firebasestorage.app",
@@ -16,6 +16,7 @@ const app = initializeApp(firebaseConfig);
 const auth = getAuth(app)
 const firestore = getFirestore(app)
 const storage = getStorage(app)
+
 
 
 export {app,auth, firestore, storage}
